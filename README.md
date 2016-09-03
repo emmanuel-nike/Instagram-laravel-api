@@ -318,6 +318,6 @@ Please see the [changelog file](CHANGELOG.md) for more information.
 ## Credits
 
 Copyright (c) 2016 - Emmanuel Ikechukwu N
-Forked from Christian Metz - http://cosenary.github.com/Instagram-PHP-API
+Credits to Christian Metz (Initial author) - http://cosenary.github.com/Instagram-PHP-API
 
 Released under the [BSD License](LICENSE).
