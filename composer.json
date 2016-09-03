@@ -1,0 +1,31 @@
+{
+	"name": "emmanueln-nike/instagram",
+	"type": "library",
+	"description": "An easy-to-use PHP Class for accessing Instagram's API.",
+	"keywords": ["instagram", "api"],
+	"homepage": "https://github.com/emmmanueln-nike/Instagram-PHP-API",
+	"license": "BSD",
+	"authors": [
+		{
+			"name": "Emmanuel Ikechukwu N",
+			"email": "free2liveb4u@gmail.com",
+			"homepage": ""
+		}
+	],
+	"require": {
+		"php": ">=5.3.0",
+		"ext-curl": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Emmanueln\\Instagram\\": "src"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "2.4-dev"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
