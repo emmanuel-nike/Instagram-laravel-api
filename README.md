@@ -307,7 +307,7 @@ Iteration with `do-while` loop.
 
 ![Image](http://cl.ly/image/221T1g3w3u2J/preview.png)
 
-This example project, located in the `example/` folder, helps you to get started.
+This example project, located in the `tests/example/` folder, helps you to get started.
 The code is well documented and takes you through all required steps of the OAuth2 process.
 Credit for the awesome Instagram icons goes to [Ricardo de Zoete Pro](http://dribbble.com/RZDESIGN).
 
@@ -323,7 +323,7 @@ Please see the [changelog file](CHANGELOG.md) for more information.
 
 ## Credits
 
-> Copyright (c) 2016 - Emmanuel Ikechukwu N
+> Copyright (c) 2016 - Emmanuel Ikechukwu N.
 > Credits to Christian Metz (Initial author) - http://cosenary.github.com/Instagram-PHP-API
 
 Released under the [BSD License](LICENSE).
