@@ -34,6 +34,12 @@ I strongly advice using [Composer](https://getcomposer.org) to keep updates as s
 $ composer require emmanueln-nike/instagram
 ```
 
+Add the service provider to config/app.php in the providers array
+
+```
+$ Emmanueln\Instagram\InstagramServiceProvider::class
+```
+
 ### Initialize the class
 
 ```php
