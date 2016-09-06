@@ -40,6 +40,16 @@ Add the service provider to config/app.php in the providers array
 $ Emmanueln\Instagram\InstagramServiceProvider::class
 ```
 
+### Configuration
+
+Publish the configuration file by running the command
+
+```
+$ php artisan vendor:publish --provider="Emmanueln\Instagram\InstagramServiceProvider"
+```
+
+This will create a instagram.php file in your config directory. Here you must enter your Instagram Api Key, Api Secret, and Callback URL.
+
 ### Initialize the class
 
 ```php
@@ -85,9 +95,9 @@ echo '<pre>';
 
 ### Setup Instagram
 
-`new Instagram(<array>/<string>);`
+`new Instagram(<array>/<string>/<null>);`
 
-`array` if you want to authenticate a user and access its data:
+`array` if you want to authenticate a user and access its data without using the config/instagram.php:
 
 ```php
 new Instagram(array(
@@ -102,6 +112,14 @@ new Instagram(array(
 ```php
 new Instagram('YOUR_APP_KEY');
 ```
+
+`null` if you want to authenticate a user and access its data the config/instagram.php:
+
+```php
+new Instagram();
+```
+
+Note that using the `null`, you must have your configurations setup in the config/instagram.php file
 
 ### Get login URL
 
@@ -323,4 +341,4 @@ Credit for the awesome Instagram icons goes to [Ricardo de Zoete Pro](http://dri
 
 > Credits to Christian Metz (Initial author) - http://cosenary.github.com/Instagram-PHP-API
 
-Released under the [BSD License](LICENSE).
+Released under the [GNU License](LICENSE).
