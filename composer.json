@@ -1,7 +1,7 @@
 {
 	"name": "emmanueln-nike/instagram",
 	"type": "library",
-	"description": "An easy-to-use PHP Class for accessing Instagram's API.",
+	"description": "An easy-to-use PHP Class for laravel for using the Instagram's API.",
 	"keywords": ["instagram", "api", "laravel", "oauth"],
 	"homepage": "https://github.com/emmanueln-nike/instagram-laravel-api",
 	"license": "GNU",
