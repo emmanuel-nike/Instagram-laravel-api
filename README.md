@@ -31,7 +31,7 @@ Please note that Instagram mainly refers to »Clients« instead of »Apps«. So 
 I strongly advice using [Composer](https://getcomposer.org) to keep updates as smooth as possible.
 
 ```
-$ composer require emmanueln-nike/instagram
+$ composer require "emmanueln-nike/instagram:*"
 ```
 
 Add the service provider to config/app.php in the providers array
