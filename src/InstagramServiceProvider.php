@@ -8,6 +8,8 @@
  * file that was distributed with this source code.
  */
 namespace Emmanueln\Instagram;
+
+use Emmanueln\Instagram\Instagram;
 use Illuminate\Support\ServiceProvider;
 /**
  * This is the Instagram service provider class.
@@ -66,8 +68,6 @@ class InstagramServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return [
-            'instagram',
-        ];
+        return ['instagram'];
     }
 }
