@@ -34,8 +34,9 @@ class InstagramServiceProvider extends ServiceProvider
      */
     protected function setupConfig()
     {
-        $source = realpath(__DIR__.'/../config/instagram.php');
-        $this->publishes([$source => config_path('instagram.php')]);
+        $this->publishes([
+            __DIR__.'/config/instagram.php' => config_path('instagram.php'),
+        ], 'config');
     }
     /**
      * Register the service provider.
@@ -48,26 +49,14 @@ class InstagramServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the manager class.
+     * Register the class.
      *
      * @return void
      */
     protected function registerInstagram()
     {
-        $this->app->singleton('instagram', function ($app) {
-            $config = config('instagram');
-            return new Instagram($config);
-        });
-        $this->app->alias('instagram', Instagram::class);
-    }
-
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return string[]
-     */
-    public function provides()
-    {
-        return ['instagram'];
+      $this->app->bind('Emmanueln\Instaram\Instagram',function($app){
+          return new Instagram($app);
+      });
     }
 }

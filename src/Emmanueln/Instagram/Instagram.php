@@ -6,7 +6,7 @@ namespace Emmanueln\Instagram;
  * Instagram API class
  *
  * API Documentation: http://instagram.com/developer/
- * Class Documentation: https://github.com/emmmanueln-nike/Instagram-PHP-API
+ * Class Documentation: https://github.com/emmmanueln-nike/instagram-laravel-api
  *
  * @author Emmanuel Ikechukwu N
  * @since 25.08.2016
@@ -96,13 +96,18 @@ class Instagram
      *
      * @throws \Emmanueln\Instagram\InstagramException
      */
-    public function __construct($config)
+    public function __construct($config = null)
     {
-        if (is_array($config)) {
+        if (is_null($config)) {
             // if you want to access user data
-            $this->setApiKey($config['apiKey']);
-            $this->setApiSecret($config['apiSecret']);
-            $this->setApiCallback($config['apiCallback']);
+            $this->setApiKey(config('instagram.apiKey'));
+            $this->setApiSecret(config('instagram.apiSecret'));
+            $this->setApiCallback(config('instagram.apiCallback'));
+        }elseif (is_array($config)) {
+           // if you want to access user data
+           $this->setApiKey($config['apiKey']);
+           $this->setApiSecret($config['apiSecret']);
+           $this->setApiCallback($config['apiCallback']);
         } elseif (is_string($config)) {
             // if you only want to access public data
             $this->setApiKey($config);
