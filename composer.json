@@ -3,7 +3,7 @@
 	"type": "library",
 	"description": "An easy-to-use PHP Class for accessing Instagram's API.",
 	"keywords": ["instagram", "api", "laravel", "oauth"],
-	"homepage": "https://github.com/emmmanueln-nike/instagram-laravel-api",
+	"homepage": "https://github.com/emmanueln-nike/instagram-laravel-api",
 	"license": "GNU",
 	"authors": [
 		{
