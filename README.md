@@ -317,13 +317,10 @@ Credit for the awesome Instagram icons goes to [Ricardo de Zoete Pro](http://dri
 
 > Let me know if you have to share a code example, too.
 
-## Changelog
-
-Please see the [changelog file](CHANGELOG.md) for more information.
-
 ## Credits
 
 > Copyright (c) 2016 - Emmanuel Ikechukwu N.
+
 > Credits to Christian Metz (Initial author) - http://cosenary.github.com/Instagram-PHP-API
 
 Released under the [BSD License](LICENSE).
